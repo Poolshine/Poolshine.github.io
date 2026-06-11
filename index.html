@@ -1,61 +1,114 @@
+<!-- Hoofdpagina van Poolshine -->
 <!DOCTYPE HTML>
 <html>
+
 <head>
+    <!-- Titel van de pagina -->
     <title>Poolshine</title>
+
+    <!-- Koppeling met CSS-bestand -->
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+    <!-- Header met bedrijfsnaam en slogan -->
     <header>
-    <h1>Poolshine</h1>
-    <p>Professionele zwembad schoonmaak service</p>
+        <h1>Poolshine</h1>
+        <p>Professionele zwembad schoonmaak service</p>
     </header>
-    <!--NAVIGATIE-->
+
+    <!-- Navigatiemenu -->
     <nav>
         <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="diensten.html">Diensten</a></li>
-        <li><a href="contact.html">Contact</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="diensten.html">Diensten</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
+
+    <!-- Informatie over het bedrijf -->
     <h2>Over poolshine</h2>
     <p>Basis zwembad schoonmaak</p>
     <p>diepe reiniging</p>
     <p>maandelijkse onderhoud</p>
     <p>spoedservice</p>
+
+    <!-- Redenen waarom klanten voor Poolshine kiezen -->
     <h2>waarom kiezen voor ons</h2>
     <p>Snel en betrouwbaar</p>
     <p>Betaalbaar prijzen</p>
     <p>Professionele apparatuur</p>
     <p>Klantvriendelijke service</p>
-    <h2>Reviews van klanten</h2>
-<div class="reviews">
-<div class="review">
-    <h3>★★★★★</h3>
-    <p>
-         Mijn zwembad was binnen een paar uur weer helemaal schoon.
-            Top service!
-    </p>
-    <p><b>-Mark uit Den Bosch</b></p>
-</div>
-<div class="review">
-    <h3>★★★★★</h3>
-    <p>
-       Vriendelijk personeel en een uitstekend resultaat.
-    </p>
-    <p><b>-Lisa uit Rosmalen</b></p>
-</div>
-<div class="review">
-    <h3>★★★★☆</h3>
-    <p>
-           Goede prijs en snel geholpen.
-    </p>
-    <p><b>-Tom uit Vught</b></p>
-</div>
-</div>
+
+    <!-- jQuery bibliotheek -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <!-- Extern JavaScript bestand -->
+    <script src="script.js"></script>
+
+    <!-- jQuery animatie voor reviews -->
+    <script>
+        $(document).ready(function() {
+
+            $(".review").hover(
+
+                function() {
+                    $(this).css("transform", "scale(1.1)");
+                },
+
+                function() {
+                    $(this).css("transform", "scale(1)");
+                }
+
+            );
+
+        });
+    </script>
+
+    <!-- Titel reviews -->
+    <div class="div">
+        <h2>Reviews van klanten</h2>
+    </div>
+
+    <!-- Container met alle reviews -->
+    <div class="reviews">
+
+        <!-- Eerste review -->
+        <div class="review">
+            <h3>★★★★★</h3>
+            <p>
+                Mijn zwembad was binnen een paar uur weer helemaal schoon.
+                Top service!
+            </p>
+            <p><b>-Mark uit Den Bosch</b></p>
+        </div>
+
+        <!-- Tweede review -->
+        <div class="review">
+            <h3>★★★★★</h3>
+            <p>
+                Vriendelijk personeel en een uitstekend resultaat.
+            </p>
+            <p><b>-Lisa uit Rosmalen</b></p>
+        </div>
+
+        <!-- Derde review -->
+        <div class="review">
+            <h3>★★★★☆</h3>
+            <p>
+                Goede prijs en snel geholpen.
+            </p>
+            <p><b>-Tom uit Vught</b></p>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
     <footer>
         <p>&#169; Poolshine 2026</p>
     </footer>
+
 </body>
 
 </html>
-
