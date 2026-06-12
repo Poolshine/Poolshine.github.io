@@ -79,10 +79,7 @@ footer {
     width: 100%;
 }
 
-/* Footer vast onderaan de contactpagina */
-#foot {
-    position: fixed;
-}
+
 
 /* Diensten en prijzen naast elkaar met Flexbox */
 .diensten {
