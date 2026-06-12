@@ -9,8 +9,12 @@ background-color: #f2f2f2;
 header {
     background-color: #3C91E6;
     color: white;
-    text-align: center;
     padding: 10px;
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 20px
 }
 
 /* Navigatiemenu */
@@ -38,6 +42,15 @@ nav ul li a {
 
 nav ul li a:hover {
     color: rgb(9, 84, 224);
+}
+p {
+    line-height: 1.6;
+}
+
+.intro {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
 }
 
 h2 {
@@ -132,4 +145,27 @@ footer {
 /* Centreren van titels */
 .div {
     text-align: center;
+    width: 100%;
+}
+.stappen {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+.stap {
+    width: 180px;
+    background-color: white;
+    border: 2px solid #0A3D62;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.stap h3 {
+    color: #3C91E6;
+    font-size: 30px;
+    margin: 0;
 }
